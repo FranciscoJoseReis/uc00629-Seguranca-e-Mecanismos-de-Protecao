@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive HTML5 Francisco Reis" />
+  <meta name="Francisco Reis" content="Xiaoying Riley at 3rd Wave Media" />
+  <link rel="stylesheet" href="css/Style.css">
+  <title>Segurança-Mecanismos de Proteção</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Segurança e Mecanismos de Proteção</h1>
+    <p>Relatório Técnico</p>
+  </header>
+
+  <nav>
+    <a href="#Firewall">Firewall</a>
+    <a href="#Antivírus">Antivírus</a>
+    <a href="#Políticas">Políticas</a>
+    <a href="#BitLocker">BitLocker</a>
+  </nav>
+
+  <!--Firewall-->
+  <section id="Firewall">
+    <h2>Configuração da Firewall do Windows</h2>
+    <p>Foi criada uma regra de entrada para bloquear a porta 23 (Telnet), frequentemente associada a vulnerabilidades.s
+    </p>
+
+    <h3>Vídeo passo a passo</h3>
+
+    <video controls>
+      <source src="Videos/Bloqueio_Telnet.mp4" type="video/mp4" />
+    </video>
+
+  </section>
+
+  <!--Antivírus-->
+  <section id="Antivírus">
+    <h2>Gestão do Antivírus</h2>
+    <p>Foram utilizados o Windows Defender e o Malwarebytes para verificar o estado de proteção do sistema.
+    </p>
+
+    <h3>Vídeos passo a passo</h3>
+
+    <h4>Windows Defender Procurar atualizações</h4>
+    <video controls>
+      <source src="Videos/Atualizacao_Defender.mp4" type="video/mp4" />
+    </video>
+
+    <h4>Windows Defender Verificação rápida</h4>
+    <video controls>
+      <source src="Videos/Verificaçao_rapida.mp4" type="video/mp4" />
+    </video>
+
+    <h4>malwarebytes Verificação rápida</h4>
+    <video controls>
+      <source src="Videos/Malwarebytes.mp4" type="video/mp4" />
+    </video>
+
+  </section>
+
+  <!--secpol-->
+  <section id="Políticas">
+    <h2>Configuração de Políticas de Segurança Local</h2>
+    <p>Foi utilizado o utilitário secpol.msc para reforçar a segurança das contas.</p>
+
+    <h3>Vídeo passo a passo</h3>
+    <h4>Configuração e Criação de nova conta de utilizador</h4>
+    <video controls>
+      <source src="Videos/secpol1.mp4" type="video/mp4" />
+    </video>
+
+    <h4>iniciar sessão com uma palavra-passe incorreta </h4>
+    <video controls>
+      <source src="Videos/secpol2.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <!--BitLocker-->
+  <section id="BitLocker">
+    <h2>Ativação do BitLocker</h2>
+    <p>Foi criado um nova drive e encriptada com BitLocker.</p>
+
+    <h3>Vídeo passo a passo</h3>
+
+    <video controls>
+      <source src="Videos/BitLocker.mp4" type="video/mp4" />
+    </video>
+
+
+  </section>
+  <footer>
+    <div>
+      <small class="copyright">
+        Copyright&copy; 2025 - <span id="ano"></span> | Segurança - Mecanismos de Proteção Designed by
+        <a href="https://rebrand.ly/portefolio" target="_blank" style="text-decoration: underline">Francisco Reis</a>
+      </small>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
