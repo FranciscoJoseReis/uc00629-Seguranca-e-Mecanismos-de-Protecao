@@ -99,5 +99,5 @@ Francisco Reis
 
 ## 📄 Licença
 
-Este projeto é disponibilizado para fins educativos.
+Este projeto é disponibilizado apenas para fins educativos.
 
